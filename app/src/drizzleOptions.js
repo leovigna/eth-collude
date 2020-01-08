@@ -1,5 +1,5 @@
 import BaseCollude from "./contracts/BaseCollude.json"
-import SimpleColludeAdapter from "./contracts/SimpleColludeAdapter.json"
+//import SimpleColludeAdapter from "./contracts/SimpleColludeAdapter.json"
 
 const options = {
   web3: {
@@ -9,7 +9,7 @@ const options = {
       url: "ws://127.0.0.1:7545"
     }
   },
-  contracts: [BaseCollude, SimpleColludeAdapter], // [ERC20Token, CrowdsaleSimple],
+  contracts: [BaseCollude],
   events: {
     BaseCollude: ["CollusionDealCreated", "CollusionDealSettled", "CollusionDealRefunded"]
   },

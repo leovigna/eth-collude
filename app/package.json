@@ -1,8 +1,8 @@
 {
-  "name": "react-starter",
+  "name": "eth-collude",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://leovigna.github.io/react-starter",
+  "homepage": "https://leovigna.github.io/eth-collude",
   "copyright": "Copyright 2019 Leo Vigna",
   "license": "MIT",
   "dependencies": {

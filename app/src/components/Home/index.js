@@ -202,7 +202,7 @@ parses the target response as an integer.
           </p>
     <Row>
         <Col>
-            <a style={styles.a} href="BaseCollude.sol">
+            <a style={styles.a} href="contracts/BaseCollude.sol">
                 BaseCollude.sol
               </a>
         </Col>
@@ -221,8 +221,8 @@ parses the target response as an integer.
     </Row>
     <Row>
         <Col>
-            <a style={styles.a} href="TestCollude.sol">
-                TestCollude.sol
+            <a style={styles.a} href="contracts/SimpleColludeTarget.sol">
+                SimpleColludeTarget.sol
               </a>
         </Col>
         |
@@ -298,8 +298,7 @@ const Home = ({ deals, BaseCollude, currentBlock }) => {
                     <Col style={styles.Bounties} xs="12" sm="12">
                         <h1>Live Bounties</h1>
                         <p>
-                            Browse all created bounties. Use the Filter form to select bounties
-                            by contract, bounty value, expiry.
+                            Browse all created bounties.
           </p>
                         <BountyTable deals={deals} handleSettleDeal={handleSettleDeal} handleRefundDeal={handleRefundDeal} blockNumber={currentBlock.number} />
                     </Col>

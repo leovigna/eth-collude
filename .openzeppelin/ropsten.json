@@ -1,0 +1,232 @@
+{
+  "contracts": {
+    "SimpleColludeBountyHunter": {
+      "address": "0xcba1151C81B5f05A52302A80ec88d774CE1b7591",
+      "constructorCode": "608060405234801561001057600080fd5b50610305806100206000396000f3fe",
+      "bodyBytecodeHash": "87ec67f7ed948422f80920e2e9fa36ce29838d554d9539602d0177ba4bb3a970",
+      "localBytecodeHash": "ca9385f6a9aeaefbca1a7cdc96443fbfaf4a73ffa9c477a56b930f0189951aa5",
+      "deployedBytecodeHash": "ca9385f6a9aeaefbca1a7cdc96443fbfaf4a73ffa9c477a56b930f0189951aa5",
+      "types": {},
+      "storage": [],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    },
+    "SimpleColludeTarget": {
+      "address": "0x3aA49432f41CA396f010e067451952eC2dcAeF21",
+      "constructorCode": "608060405234801561001057600080fd5b5060c08061001f6000396000f3fe",
+      "bodyBytecodeHash": "2366887af931512946f96eb776afb1053f9480989ce93fe125d31b5ecb0dee77",
+      "localBytecodeHash": "4f567e83051d9e104b086b2297dde98c04ab36cf1350559a70b05edb7debcbe9",
+      "deployedBytecodeHash": "4f567e83051d9e104b086b2297dde98c04ab36cf1350559a70b05edb7debcbe9",
+      "types": {
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        }
+      },
+      "storage": [
+        {
+          "contract": "SimpleColludeTarget",
+          "path": "contracts/SimpleColludeTarget.sol",
+          "label": "value",
+          "astId": 363,
+          "type": "t_uint256",
+          "src": "69:21:3"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    },
+    "BaseCollude": {
+      "address": "0xCcE20380c29d4c7D21b3a796f2cF451309409308",
+      "constructorCode": "608060405234801561001057600080fd5b50610efe806100206000396000f3fe",
+      "bodyBytecodeHash": "01d8bf617247b52dd567dddfcbfac52edd5c47ca74422a20040669d705162488",
+      "localBytecodeHash": "3a10410907b9e41b34756b51e0e68c6f20b7414b0d3317da354c6d23a8fff6aa",
+      "deployedBytecodeHash": "3a10410907b9e41b34756b51e0e68c6f20b7414b0d3317da354c6d23a8fff6aa",
+      "types": {
+        "t_struct<BaseCollude.CollusionDeal>": {
+          "id": "t_struct<BaseCollude.CollusionDeal>",
+          "kind": "struct",
+          "label": "BaseCollude.CollusionDeal",
+          "members": [
+            {
+              "label": "creator",
+              "astId": 15,
+              "type": "t_address_payable",
+              "src": "266:23:0"
+            },
+            {
+              "label": "beneficiary",
+              "astId": 17,
+              "type": "t_address_payable",
+              "src": "299:27:0"
+            },
+            {
+              "label": "bounty",
+              "astId": 19,
+              "type": "t_uint256",
+              "src": "336:14:0"
+            },
+            {
+              "label": "expiryBlock",
+              "astId": 21,
+              "type": "t_uint64",
+              "src": "360:18:0"
+            },
+            {
+              "label": "settled",
+              "astId": 23,
+              "type": "t_bool",
+              "src": "388:12:0"
+            },
+            {
+              "label": "targetContract",
+              "astId": 25,
+              "type": "t_address",
+              "src": "410:22:0"
+            },
+            {
+              "label": "targetCallData",
+              "astId": 27,
+              "type": "t_bytes",
+              "src": "442:20:0"
+            },
+            {
+              "label": "targetResponse",
+              "astId": 29,
+              "type": "t_bytes",
+              "src": "472:20:0"
+            }
+          ]
+        },
+        "t_address_payable": {
+          "id": "t_address_payable",
+          "kind": "elementary",
+          "label": "address payable"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_uint64": {
+          "id": "t_uint64",
+          "kind": "elementary",
+          "label": "uint64"
+        },
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_bytes": {
+          "id": "t_bytes",
+          "kind": "elementary",
+          "label": "bytes"
+        },
+        "t_array:dyn<t_struct<BaseCollude.CollusionDeal>>": {
+          "id": "t_array:dyn<t_struct<BaseCollude.CollusionDeal>>",
+          "valueType": "t_struct<BaseCollude.CollusionDeal>",
+          "length": "dyn",
+          "kind": "array",
+          "label": "BaseCollude.CollusionDeal[]"
+        }
+      },
+      "storage": [
+        {
+          "contract": "BaseCollude",
+          "path": "contracts/BaseCollude.sol",
+          "label": "deals",
+          "astId": 33,
+          "type": "t_array:dyn<t_struct<BaseCollude.CollusionDeal>>",
+          "src": "504:28:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [
+          {
+            "contract": "BaseCollude",
+            "path": "contracts/BaseCollude.sol",
+            "label": "deals",
+            "astId": 33,
+            "type": "t_array:dyn<t_struct<BaseCollude.CollusionDeal>>",
+            "src": "504:28:0"
+          }
+        ],
+        "storageDiff": []
+      }
+    },
+    "SimpleColludeAdapter": {
+      "address": "0x8A4582227EF7439F413fb6D4f3666Fa97BA1DB06",
+      "constructorCode": "608060405234801561001057600080fd5b506102a8806100206000396000f3fe",
+      "bodyBytecodeHash": "5a0ff8457430057180fbe5d59c7abcc60b9e6235c52ae385094839924239809e",
+      "localBytecodeHash": "0412675d6000a6bffe6d046013b46c008f9385a3fdb8f0caedd3ab712f0bb691",
+      "deployedBytecodeHash": "0412675d6000a6bffe6d046013b46c008f9385a3fdb8f0caedd3ab712f0bb691",
+      "types": {
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        }
+      },
+      "storage": [
+        {
+          "contract": "SimpleColludeAdapter",
+          "path": "contracts/SimpleColludeAdapter.sol",
+          "label": "baseCollude",
+          "astId": 258,
+          "type": "t_address",
+          "src": "99:23:1"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "eth-collude/BaseCollude": [
+      {
+        "address": "0x9924f6227dB0433302308aC3867417f38Fb1Be70",
+        "version": "1.0.0",
+        "implementation": "0xCcE20380c29d4c7D21b3a796f2cF451309409308",
+        "admin": "0x0651599E71480Da3E3C00708088AB5120D8Bc444",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x14c5180b8B448aB83a0a12506907b405fE1D45DA"
+  }
+}
