@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap");
+
+:root {
+  --color-surface: white;
+  --color-solid: black;
+  --color-primary: teal;
+  --color-gray-1: #333333;
+  --color-gray-6: #f2f2f2;
+  --color-pastelle-pink: #e5c9c6;
+  --color-pastelle-brown: #a7a195;
+  --color-pastelle-aqua: #01564e;
+  --color-pastelle-blue: #7e8fa9;
+  --color-dark-purple: #1b1044;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background-color: var(--color-gray-1);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
