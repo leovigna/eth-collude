@@ -2,9 +2,9 @@
   "manifestVersion": "2.2",
   "contracts": {
     "SimpleColludeTarget": "SimpleColludeTarget",
-    "BaseCollude": "BaseCollude",
     "SimpleColludeBountyHunter": "SimpleColludeBountyHunter",
-    "SimpleColludeAdapter": "SimpleColludeAdapter"
+    "SimpleColludeAdapter": "SimpleColludeAdapter",
+    "BaseCollude": "BaseCollude"
   },
   "dependencies": {},
   "name": "eth-collude",

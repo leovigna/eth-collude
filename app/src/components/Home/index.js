@@ -329,9 +329,9 @@ export default () => {
     return (
         <Home
             deals={useCacheCall(['BaseCollude'], call => {
-                let dealsCount = useCacheCall('BaseCollude', 'dealsCount');
+                var dealsCount = useCacheCall('BaseCollude', 'dealsCount');
                 if (!dealsCount) { return []; }
-                dealsCount = parseInt(dealsCount);
+                dealsCount = parseInt(dealsCount) || 0;
                 let deals = [...Array(dealsCount).keys()].map((_, idx) => {
                     const deal = call('BaseCollude', 'deals', idx)
                     return deal;

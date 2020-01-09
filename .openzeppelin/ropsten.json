@@ -221,6 +221,13 @@
         "implementation": "0xCcE20380c29d4c7D21b3a796f2cF451309409308",
         "admin": "0x0651599E71480Da3E3C00708088AB5120D8Bc444",
         "kind": "Upgradeable"
+      },
+      {
+        "address": "0x3e0E9398f9CaA1E436e7097a99319D54cac3cb37",
+        "version": "1.0.0",
+        "implementation": "0xCcE20380c29d4c7D21b3a796f2cF451309409308",
+        "admin": "0x14c5180b8B448aB83a0a12506907b405fE1D45DA",
+        "kind": "Upgradeable"
       }
     ]
   },
