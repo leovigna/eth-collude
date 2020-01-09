@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c01490e0003271b118d57786f3614d6b",
+    "revision": "884c28e556bd9f8b2f40b62c21b138fc",
     "url": "/eth-collude/index.html"
   },
   {
